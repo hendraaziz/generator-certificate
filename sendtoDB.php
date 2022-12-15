@@ -28,8 +28,8 @@
    $c = $_GET['username'];
    $d = $_GET['serial'];
    $yearadded = $_COOKIE['sexp'];
-   $event = "Kerja Praktek"; //$_COOKIE['sevent']
-   $organizer = "UKK Pusbangki FKUI"; //$_COOKIE['organizer']
+   $event = "Aktivitas Mahasiswa"; //$_COOKIE['sevent']
+   $organizer = "Direktorat Kemahasiswaan UGM"; //$_COOKIE['organizer']
 
    $aa = mysqli_escape_string($con, $a);
    $bb = mysqli_escape_string($con, $b);
@@ -44,4 +44,3 @@
                                  VALUES ('$aa', '$bb', CURRENT_DATE(), DATE_ADD(CURDATE(), INTERVAL $yearadded YEAR), '$cc', '$event', '$organizer','$dd')");
    }
    header('Location: canvas.php');
-?>
