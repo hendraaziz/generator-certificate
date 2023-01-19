@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Certificate Generator</title>
+    <title>Ditmawa Certificate Generator</title>
     <link href="dist/css/style.min.css" rel="stylesheet">
 </head>
 
