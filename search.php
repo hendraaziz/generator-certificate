@@ -64,7 +64,7 @@
                                 <!-- Content here -->
                                 <form action="search.php" method="post" id="searchme" name="searchme">
                                     <div class="text-center">
-                                        <h1>Search Serial Code</h1><br>   
+                                        <h1>Masukan Kode Sertifikat</h1><br>   
                                         <?php 
                                         $idsearch=null;
                                         if(!empty($_GET['id'])){
@@ -76,7 +76,7 @@
                                     </div>
                                     <div class="text-center">
                                     <br>
-                                    <button type="submit" id="find" class="btn btn-success mr-2" name="find">Search Now!</button>
+                                    <button type="submit" id="find" class="btn btn-success mr-2" name="find">Cari!</button>
                                     </div>
                                 </form>
                             </div>

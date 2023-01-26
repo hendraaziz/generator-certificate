@@ -118,7 +118,7 @@
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="form-group-text" for="eventname">Nama Kegiatan*</label>
-                                    <input type="text" id="eventname" name="eventname" size=100>
+                                    <textarea id="eventname" name="eventname" rows="2" cols="50"></textarea>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label class="form-group-text" for="pengelola">Pengelola*</label>
