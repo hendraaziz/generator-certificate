@@ -644,7 +644,7 @@
         hashed_id_serti = chunk(md5(id_serti).toString().toUpperCase(), 4).join("-");
         for(i=1;i<values.length;i++){
             var qr = new QRious({
-                value: 'http://localhost/search.php?id='+hashed_id_serti
+                value: 'https://certificate.appsdemo.my.id/search.php?id='+hashed_id_serti
             });
             qrimg[i] = qr.toDataURL('image/png',1.0);
         }

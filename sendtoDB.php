@@ -28,8 +28,9 @@
    $c = $_GET['username'];
    $d = $_GET['serial'];
    $yearadded = $_COOKIE['sexp'];
-   $event = "Aktivitas Mahasiswa"; //$_COOKIE['sevent']
-   $organizer = "Direktorat Kemahasiswaan UGM"; //$_COOKIE['organizer']
+   $katAkt = $_COOKIE['kAkt']; 
+   $event = $_COOKIE['eventname'];//"Aktivitas Mahasiswa"; //
+   $organizer = $_COOKIE['pengelola'];//"Direktorat Kemahasiswaan UGM"; //
 
    $aa = mysqli_escape_string($con, $a);
    $bb = mysqli_escape_string($con, $b);
@@ -37,8 +38,8 @@
    $dd = mysqli_escape_string($con, $d);
 
    if($yearadded == '"0"'){
-      $query = mysqli_query($con, "INSERT INTO `sertifikat` (`id`, `nama`, `tgl_keluar`, `tgl_exp`, `username_id`, `event`, `organizer`, `serial`)
-                                 VALUES ('$aa', '$bb', CURRENT_DATE(), NULL, '$cc', '$event', '$organizer','$dd')");
+      $query = mysqli_query($con, "INSERT INTO `sertifikat` (`id`, `nama`, `tgl_keluar`, `tgl_exp`, `username_id` ,`event`,`kategori`, `organizer`, `serial`)
+                                 VALUES ('$aa', '$bb', CURRENT_DATE(), NULL, '$cc', '$event', '$katAkt', '$organizer','$dd')");
    }else{
       $query = mysqli_query($con, "INSERT INTO `sertifikat` (`id`, `nama`, `tgl_keluar`, `tgl_exp`, `username_id`, `event`, `organizer`, `serial`)
                                  VALUES ('$aa', '$bb', CURRENT_DATE(), DATE_ADD(CURDATE(), INTERVAL $yearadded YEAR), '$cc', '$event', '$organizer','$dd')");

@@ -116,6 +116,17 @@
                                         <option value="Kepesertaan">Kepesertaan</option>
                                     </select> 
                                 </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-group-text" for="eventname">Nama Kegiatan*</label>
+                                    <input type="text" id="eventname" name="eventname">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="form-group-text" for="pengelola">Pengelola*</label>
+                                    <select class="form-control custom-select" id="pengelola" name="pengelola">
+                                        <option value="" disabled selected>Choose Here</option>
+                                        <option value="Direktorat Kemahasiswaan UGM">Direktorat Kemahasiswaan UGM</option>
+                                    </select> 
+                                </div>
                                 <div class="row">
                                     <div class="col-sm-12 col-xs-12">
                                         <div class="col-lg-12 col-md-12">
