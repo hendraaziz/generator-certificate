@@ -114,7 +114,7 @@
                                         <option value="" disabled selected>Choose Here</option>
                                         <option value="Kepanitiaan">Kepanitiaan</option>
                                         <option value="Kepesertaan">Kepesertaan</option>
-                                    </select>
+                                    </select> 
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12 col-xs-12">

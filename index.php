@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <!-- <div class="col-4">
                 <div class="card card-body bg-purple h-100 justify-content-center" onclick="window.location.href = 'verify.php';">
                     <div class="row">
                         <div class="col text-white align-items-center" style="text-align: center;">
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-4">
                 <div class="card card-body bg-warning h-100 justify-content-center" onclick="window.location.href = 'search.php';">
                     <div class="row">
