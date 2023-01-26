@@ -32,10 +32,10 @@
         set_cookie('sformat', $_POST["igformat"]);
         set_cookie('sqr', $qr);
         set_cookie('sidserti', $idserti);
-        set_cookie('sexp', $_POST["igexp"]);
-        set_cookie('kAkt', $_POST["katAktivitas"]);
-        set_cookie('eventname', $_POST["eventname"]);
-        set_cookie('pengelola', $_POST["pengelola"]);
+        set_cookie('sexp', $_POST['igexp']);
+        set_cookie('kAkt', $_POST['katAktivitas']);
+        set_cookie('eventname', $_POST['eventname']);
+        set_cookie('pengelola', $_POST['pengelola']);
         if (isset($_COOKIE['values'])) {
             unset($_COOKIE['values']); 
             setcookie('values', null, -1, '/'); 
