@@ -36,9 +36,9 @@
    $bb = mysqli_escape_string($con, $b);
    $cc = mysqli_escape_string($con, $c);
    $dd = mysqli_escape_string($con, $d);
-   $EkatAkt = mysqli_escape_string($con, $katAkt);
-   $Eevent = mysqli_escape_string($con, $event);
-   $Eorganizer = mysqli_escape_string($con, $organizer);
+   $EkatAkt = trim($katAkt, '"');
+   $Eevent = trim($event, '"');
+   $Eorganizer = trim($organizer, '"');
 
 
    if($yearadded == '"0"'){
