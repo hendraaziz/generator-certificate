@@ -36,12 +36,16 @@
    $bb = mysqli_escape_string($con, $b);
    $cc = mysqli_escape_string($con, $c);
    $dd = mysqli_escape_string($con, $d);
+   $EkatAkt = mysqli_escape_string($con, $katAkt);
+   $Eevent = mysqli_escape_string($con, $event);
+   $Eorganizer = mysqli_escape_string($con, $organizer);
+
 
    if($yearadded == '"0"'){
       $query = mysqli_query($con, "INSERT INTO `sertifikat` (`id`, `nama`, `tgl_keluar`, `tgl_exp`, `username_id` ,`event`,`kategori`, `organizer`, `serial`)
-                                 VALUES ('$aa', '$bb', CURRENT_DATE(), NULL, '$cc', '$event', '$katAkt', '$organizer','$dd')");
+                                 VALUES ('$aa', '$bb', CURRENT_DATE(), NULL, '$cc', '$Eevent', '$EkatAkt', '$Eorganizer','$dd')");
    }else{
-      $query = mysqli_query($con, "INSERT INTO `sertifikat` (`id`, `nama`, `tgl_keluar`, `tgl_exp`, `username_id`, `event`, `organizer`, `serial`)
-                                 VALUES ('$aa', '$bb', CURRENT_DATE(), DATE_ADD(CURDATE(), INTERVAL $yearadded YEAR), '$cc', '$event', '$organizer','$dd')");
+      $query = mysqli_query($con, "INSERT INTO `sertifikat` (`id`, `nama`, `tgl_keluar`, `tgl_exp`, `username_id`, `event`,`kategori`, `organizer`, `serial`)
+                                 VALUES ('$aa', '$bb', CURRENT_DATE(), DATE_ADD(CURDATE(), INTERVAL $yearadded YEAR), '$cc', '$Eevent', '$EkatAkt', '$Eorganizer','$dd')");
    }
    header('Location: canvas.php');
