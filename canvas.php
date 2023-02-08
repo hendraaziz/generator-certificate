@@ -632,19 +632,22 @@
     var images = [];
     <?php 
         $sqlid = "SELECT COUNT(username_id) as id FROM `sertifikat`";
+        //$sqluser = "SELECT COUNT(username_id) as id FROM `sertifikat`";
         $result = $con->query($sqlid);
         $row = mysqli_fetch_assoc($result);
     ?>
     var username = 'pusbangki'; //SELECT username FROM user_table (tunggu ada login);
     var id = parseInt(<?php echo $row['id']; ?>);
-    
+    var linkweb = 'https://certificate.ditmawaugm.id';
+
     //Fungsi untuk menggenerate semua qr dan menyimpan di url
     function generateAllQr(){
+        linkqr = linkweb;
         id_serti = username + '_' + (id+i-1);
         hashed_id_serti = chunk(md5(id_serti).toString().toUpperCase(), 4).join("-");
         for(i=1;i<values.length;i++){
             var qr = new QRious({
-                value: 'https://certificate.appsdemo.my.id/search.php?id='+hashed_id_serti
+                value: linkqr+'/search.php?id='+hashed_id_serti
             });
             qrimg[i] = qr.toDataURL('image/png',1.0);
         }
